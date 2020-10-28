@@ -1,0 +1,14 @@
+{
+  "name": "test-app-cypress-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Harman",
+  "license": "MIT",
+  "scripts": {
+    "start-server": "serve -s -l 3000 ../test-app/build"
+  },
+  "dependencies": {
+    "cypress": "^5.5.0",
+    "serve": "^11.3.2"
+  }
+}
