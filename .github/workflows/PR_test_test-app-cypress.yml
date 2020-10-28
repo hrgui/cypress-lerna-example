@@ -12,7 +12,7 @@ jobs:
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
       - name: Install dependencies
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v2.2.7
         with:
           runTests: false
       - name: Prepare UI step
@@ -20,7 +20,7 @@ jobs:
           cd packages/test-app
           yarn build
       - name: run tests
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v2.2.7
         env:
           CI: true
         with:
